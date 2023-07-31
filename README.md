@@ -14,9 +14,4 @@
 
 ```bash
 ansible-playbook -i inventory --private-key /path/to/your/private-key deploy-nexus.yaml
-
-
-Run the following command to start the playbook
-```bash
-ansible-playbook -i inventory --private-key /path/to/your/private-key deploy-nexus.yaml
 ```
