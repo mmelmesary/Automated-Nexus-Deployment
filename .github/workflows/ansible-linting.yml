@@ -15,4 +15,4 @@ jobs:
     uses: ansible/ansible-content-actions/.github/workflows/ansible_lint.yaml@main
     with:
       args: '-p .'
-      setup_python: true
+      setup_python: 'true'
