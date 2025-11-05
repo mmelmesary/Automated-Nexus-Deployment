@@ -4,7 +4,7 @@
   remote_user: ubuntu
   become: true 
   tasks: 
-  - name: Update apt repo and cache
+  - name: Update apt repo & cache
     apt:
       update_cache: yes
 
@@ -88,3 +88,4 @@
     register: app_status
 
   - debug: msg={{app_status.stdout_lines}}
+
