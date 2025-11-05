@@ -1,5 +1,5 @@
 ---
-- name: Install & configure Nexus. 
+- name: Install & configure Nexus.. 
   hosts: nexus_server
   remote_user: ubuntu
   become: true 
@@ -88,4 +88,5 @@
     register: app_status
 
   - debug: msg={{app_status.stdout_lines}}
+
 
