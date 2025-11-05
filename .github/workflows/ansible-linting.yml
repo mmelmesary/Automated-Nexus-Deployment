@@ -1,0 +1,17 @@
+name: Ansible files & Deployment
+
+on:
+  push:
+    paths:
+      - '*.yml'
+      - '*.yaml'
+  pull_request:
+    paths:
+      - '*.yml'
+      - '*.yaml'
+
+jobs:
+  ansible-lint:
+    uses: ansible/ansible-content-actions/.github/workflows/ansible_lint.yaml@main
+    with:
+      args: '-p .'
