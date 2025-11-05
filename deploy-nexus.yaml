@@ -1,5 +1,5 @@
 ---
-- name: Install & configure Nexus 
+- name: Install & configure Nexus. 
   hosts: nexus_server
   remote_user: ubuntu
   become: true 
@@ -86,4 +86,5 @@
   - name: Check with netstat
     shell: netstat -plnt
     register: app_status
+
   - debug: msg={{app_status.stdout_lines}}
